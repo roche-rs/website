@@ -4,3 +4,7 @@ language = "en"
 multilingual = false
 src = "src"
 title = "roche"
+
+[output.html]
+default-theme="Navy"
+git-repository-url="https://github.com/roche-rs/website"
