@@ -23,7 +23,12 @@ In the default scenario `build` can be executed from either the project root or 
 roche build
 ```
 
-*you must ensure that you are logged into docker or podman if you don't provide a `--tag` option*
+**docker username config**
+By default roche will try and obtain your current docker or podman user to generate the build tag. 
+
+Unfortunately older versions of docker on non-linux environments don't output complete docker info.
+
+This can be resolved by either supplying a `--tag` option or setting a `DOCKER_USERNAME` environment variable. 
 
 ## details
 

@@ -25,9 +25,11 @@ docker login
 roche build
 ```
 
-*optionally if you aren't logged in you can provide an image name*
+*optionally if you aren't logged or using an imcompatible docker version you can set a `DOCKER_USERNAME` environment variable*
+
 ```
-roche build -t registry/namespace/devimagename:version
+export DOCKER_USERNAME=yourusername
+roche build
 ```
 
 **3. If you would like to run the image use the standard docker commands**
