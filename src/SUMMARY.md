@@ -9,3 +9,4 @@
     - [test](cli/test.md)
 - [Tutorials](tutorials/README.md)
     - [simple](tutorials/simple.md)
+    - [project](tutorials/project.md)
