@@ -8,3 +8,4 @@ title = "roche"
 [output.html]
 default-theme="Navy"
 git-repository-url="https://github.com/roche-rs/website"
+google-analytics = "UA-23153005-4"
