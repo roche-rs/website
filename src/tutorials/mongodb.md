@@ -105,7 +105,7 @@ roche test
 
 Running roche test copies the lib.rs and the function.rs to the `test_build_image` specified in `.rocherc`.
 
-Roche then runs cargo test --lib in the container and the output is provided on the console.
+Roche then runs `cargo test --lib` in the container and the output is provided on the console.
 
 ```bash
 roche test
@@ -146,7 +146,7 @@ In the same folder as the `.rocherc` run in order to create a Dockerfile.
 roche gen
 ```
 
-You will notice that the file refers to the releaes image `quay.io/roche/mongodb:1.0.0 as builder`.
+You will notice that the file refers to the release image `quay.io/roche/mongodb:1.0.0 as builder`.
 
 It also builds and tests the code in release mode and if sucessful it will copy the exe into a minimum configuration image to keep the size of the final artifact to a minimum. 
 
