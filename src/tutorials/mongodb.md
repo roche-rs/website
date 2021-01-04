@@ -40,7 +40,7 @@ ls -R
 **.rocherc**
 .rocherc contains the images that are used to build the services.
 
-These images container the intialised builds that reduce build times and provide an initial implementation to get up and running with.
+These images store the intialised builds that reduce build times and provide an initial implementation to get up and running with.
 
 **Cargo.toml**
 
@@ -55,7 +55,7 @@ The description of the project and how to use it.
 The .env file is used by the build and test commands to ensure the environent is configured correctly.
 The values in here can be modified to suite your local development environment. 
 
-But the `.env` file is *not* shipped in a release build [(See 12 Factor Apps)](https://12factor.net/config).
+But the `.env` file is *not* shipped in a release build [(See 12 Factor Apps)](https://12factor.net/config) but *is* passed to the build stages so that tests can run.
 
 **src/functions.rs**
 
