@@ -82,7 +82,7 @@ let app = functions::handler(engine);
 let response_json: serde_json::value::Value = app.get("/").recv_json().await.unwrap();
 ```
 
-3. **run a local mongodb**
+**3. run a local mongodb**
 
 Before we run the unit test we should start a mongodb instance.
 Here is a quick command using docker
@@ -91,7 +91,7 @@ Here is a quick command using docker
 docker run -p 27017:27017 -v ~/data:/data mongo:4.2
 ```
 
-4. **run the test**
+**4. run the test**
 
 Once the docker instance is up and running you can run the tests with
 
@@ -134,7 +134,7 @@ Notice that the DOCKER_USERNAME is resolved by roche. If you wish to override th
 
 The test also generates a docker image called `roche/test-mongodb-sample` just incase it fails and more investigation of the build is required.
 
-5. **Generate a Dockerfile for CI/CD**
+**5. Generate a Dockerfile for CI/CD**
 
 In the same folder as the `.rocherc` run in order to create a Dockerfile.
 
@@ -146,7 +146,7 @@ You will notice that the file refers to the releaes image `quay.io/roche/mongodb
 
 It also builds and tests the code in release mode and if sucessful it will copy the exe into a minimum configuration image to keep the size of the final artifact to a minimum. 
 
-6. **Test the Dockerfile**
+**6. Test the Dockerfile**
 
 You can run `roche release` to mimic this functionality but here we are going to test the Dockerfile explicitly.
 
@@ -172,7 +172,7 @@ docker run --network host \
 
 ```
 
-7. **Next Steps**
+**7. Next Steps**
 
 Congratulations on running the mongodb template on your local machine!
 Next we will look at publishing it into a knative environment.
