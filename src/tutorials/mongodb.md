@@ -1,6 +1,6 @@
 # mongodb
 
-This tutorial will walk you creating a service using mongodb as a data store. 
+This tutorial will walk you creating a [tide](https://github.com/http-rs/tide) http service using mongodb as a data store in a docker container. 
 
 It will use the [mongodb template project](https://github.com/roche-rs/mongodb/) 
 and outline some of the features that are bundled in the template.
